@@ -3,11 +3,14 @@
 const intersection = function intersection(object_1, object_2) {
   const keysObject1 = Object.keys(object_1);
   
-  for (attribute_name of first_keys) {
-    if (object_1[attribute_name] === object_2[attribute_name]) {
-      object_2[attribute_name] = object_1[attribute_name];
+  for (const attributeName of keysObject1) {
+    const valueObject1 = object_1(attributeName);
+    const valueObject2 = object_2(attributeName);
+
+    if (object_1[attributeName] === object_2[attributeName]) {
+      object_2[attributeName] = object_1[attributeName];
     } else {
-      delete object_1[attribute_name];
+      delete object_1[attributeName];
     }
   }
   return object_1;
