@@ -8,7 +8,7 @@ const getMonthNumber = (s) => {
     }
   }
   return -1;
-};
+}
 
 const months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
 
