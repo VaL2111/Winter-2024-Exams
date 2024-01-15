@@ -1,9 +1,8 @@
 // Get day number
 
-_parse_day_ = (s) => {
-  let i;
-  for (i = 0; i < D.length; i++) {
-    if (s.startsWith(D[i].toLowerCase())) {
+const parseDay = (s) => {
+  for (let i = 0; i < daysOfWeek.length; i++) {
+    if (s.startsWith(daysOfWeek[i].toLowerCase())) {
       return i + 1;
     }
   }
@@ -12,4 +11,4 @@ _parse_day_ = (s) => {
 
 const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-module.exports = _parse_day_;
+module.exports = parseDay;
