@@ -2,7 +2,7 @@
 
 const getMonthNumber = (s) => {
   for (let i = 0; i < months.length; i++) {
-    if (s.toLowerCase().startsWith(Months[i])) {
+    if (s.toLowerCase().startsWith(months[i])) {
       return i + 1;
     }
   }
