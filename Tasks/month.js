@@ -1,9 +1,11 @@
 // Get month number
 
 const getMonthNumber = (s) => {
-  l = Months.length;
-  for (let i = 0; i < l; i++) {
-    if (s.toLowerCase().startsWith(Months[i])) return i + 1;
+  const input = s.toLowerCase();
+  for (let i = 0; i < months.length; i++) {
+    if (input.startsWith(Months[i])) {
+      return i + 1;
+    }
   }
   return -1;
 };
