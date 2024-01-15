@@ -4,11 +4,11 @@ const duplicate = (value, N) => {
   if (N <= 0){
      return [];
   } else {
-    res = [];
+    let resultArray = [];
     for (let i = 0; i < N; i++) {
-      res[i] = value;
+      resultArray.push(value);
     }
-    return res;
+    return resultArray;
   }
 };
 
