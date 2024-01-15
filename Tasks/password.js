@@ -4,10 +4,10 @@ const CreationPassword = (alphabet, length) => {
   const alphabetLength = alphabet.length;
   let password = '';
   for (let i = 0; i < length; i++) {
-    Index = Math.floor(Math.random() * MAX);
-    key = key + alphabet[Index];
+    const index = Math.floor(Math.random() * alphabetLength);
+    password += alphabet[index];
   }
-  return key;
+  return password;
 };
 
-module.exports = GeneratePassword;
+module.exports = CreationPassword;
