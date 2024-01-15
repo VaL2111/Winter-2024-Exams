@@ -1,5 +1,7 @@
 // Get day number
 
+'use strict';
+
 const parseDay = (s) => {
   for (let i = 0; i < daysOfWeek.length; i++) {
     if (s.startsWith(daysOfWeek[i].toLowerCase())) {
